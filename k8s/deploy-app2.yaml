@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-k8s-app2
+  labels:
+    app: go-k8s-app2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-k8s-app2
+  template:
+    metadata:
+      labels:
+        app: go-k8s
+        tier: backend
+    spec:
+      containers:
+        - name: go-k8s-app2
+          image: go-k8s-app2:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
