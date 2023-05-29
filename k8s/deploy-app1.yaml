@@ -17,6 +17,6 @@ spec:
       containers:
         - name: go-k8s-app1
           image: go-k8s-app1:latest
-          imagePullPolicy: Always
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
