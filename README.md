@@ -4,7 +4,7 @@
 
 1. Install Docker Hub (recommended)
 2. Install kubernetes via `brew install kubectl`
-3. Run: `deploy.sh`
+3. Run: `sh deploy.sh`
 
 ## Check the pods:
 
