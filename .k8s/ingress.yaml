@@ -3,14 +3,11 @@ kind: Ingress
 metadata:
   name: go-k8s-ingress
   annotations:
-    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  tls:
-    - hosts:
-        - localhost
   rules:
-    - host: localhost
-      http:
+    - host: hello-chheung.com
+    - http:
         paths:
           - path: /app1
             pathType: Prefix
@@ -18,11 +15,11 @@ spec:
               service:
                 name: go-k8s-app1
                 port:
-                  number: 80
+                  number: 3000
           - path: /app2
             pathType: Prefix
             backend:
               service:
                 name: go-k8s-app2
                 port:
-                  number: 80
+                  number: 3001

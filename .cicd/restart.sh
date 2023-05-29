@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sh nuke.sh
-sh start.sh
+sh ./.cicd/nuke.sh
+sh ./.cicd/start.sh
