@@ -7,6 +7,7 @@ echo "Starting minikube"
 echo "==================\n"
 
 minikube start
+minikube addons enable ingress
 
 #############
 
@@ -26,14 +27,15 @@ echo "\n====================================="
 echo "Applying k8s deployments and ingress"
 echo "=====================================\n"
 
-kubectl apply -f ./.k8s/deploy-app1.yaml
-kubectl apply -f ./.k8s/deploy-app2.yaml
-kubectl apply -f ./.k8s/ingress.yaml
+kubectl create namespace go-multi-module-k8s
+kubectl apply -f ./.k8s/deploy-app1.yaml -n go-multi-module-k8s
+kubectl apply -f ./.k8s/deploy-app2.yaml -n go-multi-module-k8s
+kubectl apply -f ./.k8s/ingress.yaml -n go-multi-module-k8s
 
 #############
 
-# echo "\n====================================="
-# echo "Start serving externally via minikube"
-# echo "=====================================\n"
+echo "\n================================================"
+echo "Start serving externally via minikube @ 127.0.0.1"
+echo "==================================================\n"
 
-# minikube service go-k8s-lb
+sudo minikube tunnel

@@ -4,5 +4,5 @@ echo "====================================="
 echo "Nuking...."
 echo "=====================================\n"
 
-kubectl delete all --all
-sudo kubectl delete ingress --all 
+kubectl delete all -n go-multi-module-k8s
+sudo minikube stop
