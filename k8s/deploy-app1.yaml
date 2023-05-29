@@ -12,8 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: go-k8s
-        tier: backend
+        app: go-k8s-app1
     spec:
       containers:
         - name: go-k8s-app1
