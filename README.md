@@ -23,3 +23,11 @@ kubectl get services
 ```
 kubectl get ingress
 ```
+
+## ⚠️ Nuke your kubernetes resources ⚠️
+
+### Beware it will destroy ur other resources as well. Consider using `namespace` 🙂:
+
+```
+kubectl delete all --all
+```
