@@ -17,3 +17,9 @@ kubectl get pod -o wide
 ```
 kubectl get services
 ```
+
+## Check ingress:
+
+```
+kubectl get ingress
+```
