@@ -4,7 +4,11 @@
 
 1. Install Docker Hub (recommended)
 2. Install kubernetes via `brew install kubectl`
-3. Run: `sh deploy.sh`
+3. Run:
+
+```
+sh deploy.sh
+```
 
 ## Check the pods:
 
@@ -29,5 +33,5 @@ kubectl get ingress
 ### Beware it will destroy ur other resources as well. Consider using `namespace` 🙂:
 
 ```
-kubectl delete all --all
+sh nuke.sh
 ```
