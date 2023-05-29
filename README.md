@@ -3,7 +3,7 @@
 ## Getting started:
 
 1. Install Docker Hub (recommended)
-2. Install kubernetes via `brew install kubectl`
+2. Install kubernetes via `brew install kubectl` or `minikube`
 3. Run:
 
 ```
