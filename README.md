@@ -1,5 +1,7 @@
 ## Getting started:
 
+### https://stackoverflow.com/questions/58561682/minikube-with-ingress-example-not-working
+
 1. Install Docker Hub (recommended)
 2. Install kubernetes via `brew install minikube`
 3. Run:
