@@ -1,6 +1,6 @@
 ## Getting started:
 
-- Install Docker Hub (recommended)
+- Install Docker Desktop (recommended)
 - Install kubernetes via `brew install kubectl`
 - Install minikube via `brew install minikube`
 - Run:
