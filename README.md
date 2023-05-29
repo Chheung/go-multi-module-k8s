@@ -3,11 +3,11 @@
 ## Getting started:
 
 1. Install Docker Hub (recommended)
-2. Install kubernetes via `brew install kubectl` or `minikube`
+2. Install kubernetes via `brew install minikube`
 3. Run:
 
 ```
-sh deploy.sh
+sh ./.cicd/start.sh
 ```
 
 ## Check the pods:
@@ -19,13 +19,13 @@ kubectl get pod -o wide
 ## Check services:
 
 ```
-kubectl get services
+kubectl get services -o wide
 ```
 
 ## Check ingress:
 
 ```
-kubectl get ingress
+kubectl get ingress -o wide
 ```
 
 ## ⚠️ Nuke your kubernetes resources ⚠️
@@ -33,5 +33,11 @@ kubectl get ingress
 ### Beware it will destroy ur other resources as well. Consider using `namespace` 🙂:
 
 ```
-sh nuke.sh
+sh ./.cicd/nuke.sh
+```
+
+## Restart ⚠️ nuke + start
+
+```
+sh ./.cicd/restart.sh
 ```
