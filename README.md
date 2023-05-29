@@ -1,5 +1,3 @@
-# go-multi-module-k8s
-
 ## Getting started:
 
 1. Install Docker Hub (recommended)
