@@ -6,7 +6,7 @@
 - Run:
 
 ```
-sh ./.cicd/start.sh
+sh ./.bash/start.sh
 ```
 
 ## Dashboard
@@ -36,13 +36,13 @@ kubectl get ingress -o wide
 ## ⚠️ Nuke your kubernetes resources ⚠️
 
 ```
-sh ./.cicd/nuke.sh
+sh ./.bash/nuke.sh
 ```
 
 ## Restart ⚠️ nuke + start
 
 ```
-sh ./.cicd/restart.sh
+sh ./.bash/restart.sh
 ```
 
 ## Refresh minikube
